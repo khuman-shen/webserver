@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Web Sever</title>
+  </head>
+  <body>
+    <div align="center">
+      <h1>Welcome to Web Server!</h1>
+      <p>This is a simple webserver made with c!</p>
+      <br>
+      <h2>Fun Fact</h2>
+      <button id="clickme">Click Me</button>
+      <p id="surprise"></p>
+    </div>
+  </body>
+  <script>
+    const btn = document.getElementById("clickme");
+    const text = document.getElementById("surprise");
+    btn.addEventListener("click",()=>{
+      text.innerText = "This is my First Web Server";
+      setTimeout(()=>{
+        text.innerText = "";
+      },5000);
+    });
+  </script>
+</html>
